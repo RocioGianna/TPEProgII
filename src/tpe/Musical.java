@@ -27,11 +27,11 @@ public class Musical {
     }
 
     public ArrayList<String> getGenerosMusicales() {
-        return generosMusicales;
+        return new ArrayList<String>(generosMusicales);
     }
 
     public ArrayList<String> getInstrumentos() {
-        return instrumentos;
+        return new ArrayList<String>(instrumentos);
     }
 
 }

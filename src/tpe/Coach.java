@@ -19,7 +19,7 @@ public class Coach {
 		return total/equipo.size();
 	}
 	//METODOS QUE RETORNEN LISTADOS DE INSTRUMENTOS, IDIOMAS, GENEROS
-	
+							//(otro dia )
 	
 	//getters y setters
 	public String getNombre() {
