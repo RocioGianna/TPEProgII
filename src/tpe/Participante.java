@@ -9,6 +9,7 @@ public class Participante {
 	private ArrayList<String>generosPreferidos;
 	private ArrayList<String>idiomas;
 	private ArrayList<String>instrumentos;
+	private ArrayList<String>instrumentos2;
 	
 	
 	public Participante(String nombre, String apellido, int edad) {
