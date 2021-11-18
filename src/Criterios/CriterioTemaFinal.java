@@ -1,28 +1,23 @@
 package Criterios;
 
 import Entidades.ElementoAbs;
-import Entidades.Musical;
 
 public class CriterioTemaFinal extends Criterio {
-	private Musical tema;
 	private int cantMiembros;
+	private Criterio c;
 	
 	
 	
 	
-	public CriterioTemaFinal(Musical tema, int cant) {
-		this.tema = tema;
+	public CriterioTemaFinal(int cant, Criterio criterio) {
 		this.cantMiembros = cant;
+		this.c = criterio;
 	}
 
 
 	@Override
 	public boolean cumple(ElementoAbs p) {
-		for(String i:tema.getInstrumentos()) {
-			if(p.getCantidadMiembrosInstrumentos(i) == this.cantMiembros)
-				return true;
-		}
-		return false;
+		return p.getCantidadMiembros(c) == this.cantMiembros;
 	}
 
 }

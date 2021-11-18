@@ -20,7 +20,7 @@ public abstract class ElementoAbs {
 	public abstract ArrayList<String> getInstrumentos();//simple retorna copia de su array instrumentos... compuesto retorna sin repetidos
 	public abstract ArrayList<ElementoAbs> getConjuntoQueCumple(Criterio c);//simple retorna un array vacio o con él mismo adentro(si cumple)....compuesto retorna a si mismo o sus miembros
 	
-	public abstract int getCantidadMiembrosInstrumentos(String instrumento); 
+	public abstract int getCantidadMiembros(Criterio c); 
 	
 	
 	//booleanos que utilizan los criterios para las busquedas

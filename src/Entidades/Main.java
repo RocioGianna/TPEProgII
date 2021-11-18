@@ -29,7 +29,7 @@ public class Main {
 		m.addInstrumento("tambor");
 		m.addGenero("folklore");
 		
-		Criterio tema = new CriterioTemaFinal(m, 2);
+		Criterio tema = new CriterioTemaFinal(1, idi);
 		
 		Coach c1 = new Coach("Montaner", comun);
 		Coach c2 = new Coach("La Sole", gen2);

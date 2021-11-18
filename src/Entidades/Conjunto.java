@@ -16,10 +16,10 @@ public class Conjunto extends ElementoAbs {
 		this.miembros = new ArrayList<>();
 	}
 	
-	public int getCantidadMiembrosInstrumentos(String instrumento) {
+	public int getCantidadMiembros(Criterio c) {
 		int total = 0;
 		for(ElementoAbs e:miembros) {
-			total+= e.getCantidadMiembrosInstrumentos(instrumento);
+			total+= e.getCantidadMiembros(c);
 		}
 		return total;
 	}

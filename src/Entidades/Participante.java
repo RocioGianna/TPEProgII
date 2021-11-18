@@ -77,8 +77,8 @@ public class Participante extends ElementoAbs{
 	}
 	
 	@Override
-	public int getCantidadMiembrosInstrumentos(String instrumento) {
-		if(this.tocaInstrumentos(instrumento)) {
+	public int getCantidadMiembros(Criterio c) {
+		if(c.cumple(this)) {
 			return 1;
 		}
 		return 0;
